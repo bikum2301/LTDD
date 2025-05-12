@@ -3,7 +3,8 @@
 
 # Log files
 *.log
-
+# Local application properties
+src/main/resources/application.properties
 # BlueJ files
 *.ctxt
 
