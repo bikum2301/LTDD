@@ -33,9 +33,9 @@ out/
 *.iml
 *.ipr
 *.iws
-.project
-.classpath
-.settings/
+# .project # Thường không cần ignore nếu dùng Maven/Gradle
+# .classpath # Thường không cần ignore nếu dùng Maven/Gradle
+# .settings/ # Thường không cần ignore nếu dùng Maven/Gradle
 
 # Maven
 pom.xml.tag
@@ -46,30 +46,23 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar # Nếu bạn muốn mỗi người tự generate wrapper
 
 # Gradle
 .gradle/
-build/
+# build/ # Đã có ở trên
 # Cấu hình local của Gradle
-gradle/wrapper/gradle-wrapper.properties
+# gradle/wrapper/gradle-wrapper.properties # Nên commit file này để đảm bảo phiên bản Gradle nhất quán
 # Ignore Gradle GUI config
 gradle-app.setting
 
-# IntelliJ IDEA
-# *.iml
-# modules.xml # Nếu làm việc nhóm và muốn đồng bộ modules
-# .idea/workspace.xml # Có thể giữ lại nếu làm việc cá nhân
-# .idea/libraries # Thường được generate lại
-streamapp-backend-storage-47d35ce44a6b.json
 # VS Code
 .vscode/
 
-# Eclipse
-.settings/
-target/
-.project
-.classpath
+# Eclipse (Nếu không dùng Maven/Gradle quản lý hoàn toàn)
+# .project
+# .classpath
+# .settings/
 
 # NetBeans
 /nbproject/private/
@@ -78,26 +71,26 @@ target/
 /nbdist/
 /.nb-gradle/
 
-# OS X
+# OS specific
 .DS_Store
-
-# Windows
 Thumbs.db
 
-# Local Properties (Nếu có)
-# local.properties
-
-# Sensitive information files
-# Ví dụ: nếu bạn có file chứa credentials riêng không nên commit
-# credentials.yml
-# application-secret.properties
+# Local application properties file
+src/main/resources/application.properties
 
 # Google Drive Credentials (RẤT QUAN TRỌNG)
-google-credentials.json # Hoặc tên file credentials thực tế của bạn
-# Ví dụ: streamapp-backend-storage-*.json
+src/main/resources/streamapp-backend-storage-47d35ce44a6b.json
 
-# H2 Database files (Nếu bạn không muốn commit file DB local)
-data/streamapp_gdrive_db.mv.db
-data/streamapp_gdrive_db.trace.db
-# Hoặc toàn bộ thư mục data
-# data/
+# H2 Database files
+data/
+# Hoặc nếu bạn chỉ muốn ignore file cụ thể:
+# data/streamapp_gdrive_db.mv.db
+# data/streamapp_gdrive_db.trace.db
+# data/*.lock.db
+
+# Sensitive information files (Ví dụ khác)
+# credentials.yml
+# application-secret.properties
+.classpath
+.project
+.settings/
