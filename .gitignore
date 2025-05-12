@@ -1,0 +1,103 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Build Directory
+target/
+**/target/
+build/
+**/build/
+out/
+
+# IDE specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+# Cấu hình local của Gradle
+gradle/wrapper/gradle-wrapper.properties
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# IntelliJ IDEA
+# *.iml
+# modules.xml # Nếu làm việc nhóm và muốn đồng bộ modules
+# .idea/workspace.xml # Có thể giữ lại nếu làm việc cá nhân
+# .idea/libraries # Thường được generate lại
+streamapp-backend-storage-47d35ce44a6b.json
+# VS Code
+.vscode/
+
+# Eclipse
+.settings/
+target/
+.project
+.classpath
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# OS X
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Local Properties (Nếu có)
+# local.properties
+
+# Sensitive information files
+# Ví dụ: nếu bạn có file chứa credentials riêng không nên commit
+# credentials.yml
+# application-secret.properties
+
+# Google Drive Credentials (RẤT QUAN TRỌNG)
+google-credentials.json # Hoặc tên file credentials thực tế của bạn
+# Ví dụ: streamapp-backend-storage-*.json
+
+# H2 Database files (Nếu bạn không muốn commit file DB local)
+data/streamapp_gdrive_db.mv.db
+data/streamapp_gdrive_db.trace.db
+# Hoặc toàn bộ thư mục data
+# data/
